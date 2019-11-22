@@ -19,7 +19,7 @@ def LoadFile(file_name):
 def UpdateString(string_1, string_2, i):
     new_string = ''
     new_string = string_1[:i] + string_2 + string_1[i + 1:]
-    return(new_string)
+    PrintOutput(new_string)
 
 #FindWordCount
 def FindWordCount(input_list, input_string):
@@ -29,6 +29,20 @@ def FindWordCount(input_list, input_string):
     return(counter)
 
 #ScoreFinder
+def ScoreFinder(player_names, player_scores, player_to_find):
+    counter = 0
+    found = False
+    for i in player_names:
+        if i.lower() == player_to_find.lower():
+            found = True
+            break
+        else:
+            counter +=1
+    if found == False:
+        PrintOutput('Player not found')
+    else:
+        output_string = player_to_find + ' got a score of ' + str(player_scores[counter])
+        PrintOutput(output_string)
 
 #Union
 
