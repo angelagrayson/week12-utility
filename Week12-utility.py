@@ -45,6 +45,10 @@ def ScoreFinder(player_names, player_scores, player_to_find):
         PrintOutput(output_string)
 
 #Union
+def Union(list_1, list_2):
+    list_1 = list(dict.fromkeys(list_1))
+    list_2 = list(dict.fromkeys(list_2))
+    return(list_1 + list_2)
 
 #Intersection
 
