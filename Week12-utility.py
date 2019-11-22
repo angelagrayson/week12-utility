@@ -4,6 +4,8 @@
 # Week 11 - Part B
 
 #PrintOutput
+def PrintOutput(string):
+    print('OUTPUT', string)
 
 #Loadfile
 
