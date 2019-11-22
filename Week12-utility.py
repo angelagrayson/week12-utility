@@ -7,7 +7,7 @@
 def PrintOutput(string):
     print('OUTPUT', string)
 
-#Loadfile
+#LoadFile
 def LoadFile(file_name):
     file_list = []
     f = open(file_name)
@@ -16,6 +16,10 @@ def LoadFile(file_name):
     return(file_list)
 
 #UpdateString
+def UpdateString(string_1, string_2, i):
+    new_string = ''
+    new_string = string_1[:i] + string_2 + string_1[i + 1:]
+    return(new_string)
 
 #FindWordCount
 
