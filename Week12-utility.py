@@ -22,6 +22,11 @@ def UpdateString(string_1, string_2, i):
     return(new_string)
 
 #FindWordCount
+def FindWordCount(input_list, input_string):
+    counter = 0
+    for i in input_list:
+        counter += i.count(input_string)
+    return(counter)
 
 #ScoreFinder
 
