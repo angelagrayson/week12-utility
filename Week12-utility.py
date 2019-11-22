@@ -51,5 +51,12 @@ def Union(list_1, list_2):
     return(list_1 + list_2)
 
 #Intersection
+def Intersection(list_1, list_2):
+    output_list = []
+    for i in list_1:
+        for j in list_2:
+            if i.lower() == j.lower():
+                output_list.append(i)
+    return(output_list)
 
 #NotIn
